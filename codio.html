@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تطبيقات Codio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* تاسك بار */
+    .taskbar {
+      background-color: #6200ea;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      font-size: 18px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .taskbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+    .taskbar a:hover {
+      text-decoration: underline;
+    }
+
+    /* كارت التطبيق */
+    .app-container {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    .app-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .app-header img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+    .app-header h2 {
+      margin: 0;
+      font-size: 22px;
+      color: #333;
+    }
+    .app-description {
+      margin: 10px 0;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .versions {
+      margin-top: 15px;
+    }
+    .version {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f0f0f0;
+      padding: 10px 15px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .version span {
+      font-weight: bold;
+      color: #333;
+    }
+    .version a {
+      text-decoration: none;
+      background-color: #6200ea;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.2s;
+    }
+    .version a:hover {
+      background-color: #3700b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="taskbar">
+    <div>تحميل</div>
+    <div><a href="index.html">الرجوع للصفحة الرئيسية</a></div>
+  </div>
+
+  <div class="app-container">
+    <div class="app-header">
+      <img src="codio_icon.png" alt="Codio">
+      <h2>برنامج Codio</h2>
+    </div>
+    <div class="app-description">
+      برنامج لقراءة QR كود، إنشاء QR كود، وتفريغ النصوص من ورقة إلى Text.
+    </div>
+
+    <div class="versions">
+      <div class="version">
+        <span>الإصدار الأول</span>
+        <a href="codio_v1.apk" download>تحميل</a>
+      </div>
+      <div class="version">
+        <span>الإصدار الثاني</span>
+        <a href="codio_v2.apk" download>تحميل</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
